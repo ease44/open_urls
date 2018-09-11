@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title> 测试 </title>
+        <script>
+            function iopen(){
+                // 替换url列表即可
+                var a = Array(
+                    'http://www.xuetangx.com',
+                    'http://www.baidu.com'
+                    )
+                for(var i=0;i<a.length;i++){
+                    var command = a[i];
+                    console.log(command)
+                    var vra=document.createElement('a');
+                    vra.target='_blank';
+                    vra.href=command;
+                    document.body.appendChild(vra);
+                    vra.click();
+                }
+            }
+        </script>
+    </head>
+    <body onload="iopen();">
+    </body>
+</html>
